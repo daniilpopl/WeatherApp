@@ -6,6 +6,9 @@
 import Foundation
 import UIKit
 
+let formatter = MeasurementFormatter()
+
+
 struct CurrentWeather {
   let temperature: Double
   let apparentTemperature: Double
@@ -31,10 +34,8 @@ extension CurrentWeather: JSONDecodable {
     self.humidity = humidity
     self.pressure = pressure
     self.icon = icon
-    
   }
 }
-
 
 extension CurrentWeather {
   var pressureString: String {
@@ -46,7 +47,7 @@ extension CurrentWeather {
   }
   
   var temperatureString: String {
-    return "\(Int(5 / 9 * (temperature - 32)))˚C / \(Int(temperature))°F "
+    return "\(Int(5 / 9 * (temperature - 32)))˚C"
   }
   
   var appearentTemperatureString: String {
