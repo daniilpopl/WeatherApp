@@ -46,7 +46,7 @@ extension CurrentWeather {
   }
   
   var temperatureString: String {
-    return "\(Int(5 / 9 * (temperature - 32)))˚C"
+    return "\(Int(5 / 9 * (temperature - 32)))˚C / \(Int(temperature))°F "
   }
   
   var appearentTemperatureString: String {
