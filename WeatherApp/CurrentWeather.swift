@@ -5,6 +5,7 @@
 
 import Foundation
 import UIKit
+import SwiftyJSON
 
 let formatter = MeasurementFormatter()
 
@@ -15,6 +16,7 @@ struct CurrentWeather {
   let humidity: Double
   let pressure: Double
   let icon: UIImage
+    let timeZone: String
 }
 
 extension CurrentWeather: JSONDecodable {
@@ -23,7 +25,8 @@ extension CurrentWeather: JSONDecodable {
     let apparentTemperature = JSON["apparentTemperature"] as? Double,
     let humidity = JSON["humidity"] as? Double,
     let pressure = JSON["pressure"] as? Double,
-      let iconString = JSON["icon"] as? String else {
+      let iconString = JSON["icon"] as? String,
+    let timeZone = JSON["timeZone"] as? String else {
         return nil
     }
     
@@ -34,6 +37,7 @@ extension CurrentWeather: JSONDecodable {
     self.humidity = humidity
     self.pressure = pressure
     self.icon = icon
+    self.timeZone = timeZone
   }
 }
 
@@ -41,7 +45,9 @@ extension CurrentWeather {
   var pressureString: String {
     return "\(Int(pressure * 0.750062)) mm"
   }
-  
+    var timeZoneSting: String {
+        return "\(timeZone)"
+    }
   var humidityString: String {
     return "\(Int(humidity * 100)) %"
   }

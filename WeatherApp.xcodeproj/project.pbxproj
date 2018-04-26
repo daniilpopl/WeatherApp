@@ -21,6 +21,8 @@
 		35E4B8E01D6D5089004C1247 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B8DF1D6D5089004C1247 /* Assets.xcassets */; };
 		35E4B8E31D6D5089004C1247 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E4B8E11D6D5089004C1247 /* LaunchScreen.storyboard */; };
 		3FE7FCCF3CE10CC4B7A4F30A /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7518F5D3B91EC3328EB917 /* Pods_WeatherApp.framework */; };
+		D07003C12091ADCF005DB292 /* APIManager2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07003C02091ADCF005DB292 /* APIManager2.swift */; };
+		D07003C32091C06C005DB292 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07003C22091C06C005DB292 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		6B7518F5D3B91EC3328EB917 /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80261674692A4B02F8DFB93E /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		AAC95C3A6E967967570F5333 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D07003C02091ADCF005DB292 /* APIManager2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager2.swift; sourceTree = "<group>"; };
+		D07003C22091C06C005DB292 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				35AE9D161D7567030055DF53 /* APIManager.swift */,
+				D07003C02091ADCF005DB292 /* APIManager2.swift */,
+				D07003C22091C06C005DB292 /* Constant.swift */,
 				35AE9D2A1D76BE180055DF53 /* APIWeatherManager.swift */,
 				35AE9D1F1D75999C0055DF53 /* ErrorManager.swift */,
 				35E4B8D81D6D5089004C1247 /* AppDelegate.swift */,
@@ -155,7 +161,7 @@
 				TargetAttributes = {
 					35E4B8D41D6D5089004C1247 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SVMFLJUW97;
+						DevelopmentTeam = 5P7T289PPK;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -255,11 +261,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3507D3581D79451A0080F4B3 /* ParticlesView.swift in Sources */,
+				D07003C12091ADCF005DB292 /* APIManager2.swift in Sources */,
 				35AE9D201D75999C0055DF53 /* ErrorManager.swift in Sources */,
 				35E4B8DB1D6D5089004C1247 /* ViewController.swift in Sources */,
 				354EE48D1D6E009B003D3ECF /* CurrentWeather.swift in Sources */,
 				35AE9D171D7567030055DF53 /* APIManager.swift in Sources */,
 				35AE9D2B1D76BE180055DF53 /* APIWeatherManager.swift in Sources */,
+				D07003C32091C06C005DB292 /* Constant.swift in Sources */,
 				35E4B8D91D6D5089004C1247 /* AppDelegate.swift in Sources */,
 				354EE48F1D6E013C003D3ECF /* WeatherIconManager.swift in Sources */,
 			);
@@ -383,7 +391,7 @@
 			baseConfigurationReference = AAC95C3A6E967967570F5333 /* Pods-WeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SVMFLJUW97;
+				DEVELOPMENT_TEAM = 5P7T289PPK;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.WeatherApp;
@@ -397,7 +405,7 @@
 			baseConfigurationReference = 80261674692A4B02F8DFB93E /* Pods-WeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SVMFLJUW97;
+				DEVELOPMENT_TEAM = 5P7T289PPK;
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.swiftbook.WeatherApp;
