@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261EDDD6209470D900843696 /* Weather5DaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261EDDD5209470D900843696 /* Weather5DaysViewController.swift */; };
+		261EDDD8209471A000843696 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261EDDD7209471A000843696 /* TableViewDataSource.swift */; };
 		3507D3581D79451A0080F4B3 /* ParticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3507D3571D79451A0080F4B3 /* ParticlesView.swift */; };
 		3507D35B1D7945AC0080F4B3 /* ParticleScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3507D3591D7945AC0080F4B3 /* ParticleScene.sks */; };
 		3507D35C1D7945AC0080F4B3 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 3507D35A1D7945AC0080F4B3 /* spark.png */; };
-		354EE48D1D6E009B003D3ECF /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EE48C1D6E009B003D3ECF /* CurrentWeather.swift */; };
+		354EE48D1D6E009B003D3ECF /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EE48C1D6E009B003D3ECF /* WeatherData.swift */; };
 		354EE48F1D6E013C003D3ECF /* WeatherIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354EE48E1D6E013C003D3ECF /* WeatherIconManager.swift */; };
 		35AE9D171D7567030055DF53 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE9D161D7567030055DF53 /* APIManager.swift */; };
 		35AE9D201D75999C0055DF53 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AE9D1F1D75999C0055DF53 /* ErrorManager.swift */; };
@@ -24,10 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261EDDD5209470D900843696 /* Weather5DaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather5DaysViewController.swift; sourceTree = "<group>"; };
+		261EDDD7209471A000843696 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		3507D3571D79451A0080F4B3 /* ParticlesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticlesView.swift; sourceTree = "<group>"; };
 		3507D3591D7945AC0080F4B3 /* ParticleScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ParticleScene.sks; sourceTree = "<group>"; };
 		3507D35A1D7945AC0080F4B3 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		354EE48C1D6E009B003D3ECF /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		354EE48C1D6E009B003D3ECF /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		354EE48E1D6E013C003D3ECF /* WeatherIconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIconManager.swift; sourceTree = "<group>"; };
 		35AE9D161D7567030055DF53 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIManager.swift; path = ../APIManager.swift; sourceTree = "<group>"; };
 		35AE9D1F1D75999C0055DF53 /* ErrorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
@@ -60,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				354EE48E1D6E013C003D3ECF /* WeatherIconManager.swift */,
-				354EE48C1D6E009B003D3ECF /* CurrentWeather.swift */,
+				354EE48C1D6E009B003D3ECF /* WeatherData.swift */,
 			);
 			name = "Weather model";
 			sourceTree = "<group>";
@@ -93,6 +97,8 @@
 				35E4B8DA1D6D5089004C1247 /* ViewController.swift */,
 				35AE9D211D7599A70055DF53 /* Weather model */,
 				35E4B8DC1D6D5089004C1247 /* Main.storyboard */,
+				261EDDD7209471A000843696 /* TableViewDataSource.swift */,
+				261EDDD5209470D900843696 /* Weather5DaysViewController.swift */,
 				3507D3591D7945AC0080F4B3 /* ParticleScene.sks */,
 				3507D35A1D7945AC0080F4B3 /* spark.png */,
 				3507D3571D79451A0080F4B3 /* ParticlesView.swift */,
@@ -257,8 +263,10 @@
 				3507D3581D79451A0080F4B3 /* ParticlesView.swift in Sources */,
 				35AE9D201D75999C0055DF53 /* ErrorManager.swift in Sources */,
 				35E4B8DB1D6D5089004C1247 /* ViewController.swift in Sources */,
-				354EE48D1D6E009B003D3ECF /* CurrentWeather.swift in Sources */,
+				261EDDD6209470D900843696 /* Weather5DaysViewController.swift in Sources */,
+				354EE48D1D6E009B003D3ECF /* WeatherData.swift in Sources */,
 				35AE9D171D7567030055DF53 /* APIManager.swift in Sources */,
+				261EDDD8209471A000843696 /* TableViewDataSource.swift in Sources */,
 				35AE9D2B1D76BE180055DF53 /* APIWeatherManager.swift in Sources */,
 				35E4B8D91D6D5089004C1247 /* AppDelegate.swift in Sources */,
 				354EE48F1D6E013C003D3ECF /* WeatherIconManager.swift in Sources */,

@@ -74,7 +74,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
     
-    func updateUIWith(currentWeather: CurrentWeather) {
+    func updateUIWith(currentWeather: WeatherData) {
         formatter.locale = Locale.current
         let measurement = Measurement(value: currentWeather.temperature, unit: UnitTemperature.fahrenheit)
         let temperature = formatter.string(from: measurement)
